@@ -14,7 +14,6 @@
     <%#= favicon_link_tag 'favicon.ico', :rel => 'shortcut icon' %>
 
     <%= javascript_include_tag "application" %>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
@@ -110,12 +109,15 @@ $('.side_links').click(function (event){
   return false;
 });
 
+$("#sm_stories").toggleClass("container")
 $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
   });
      $("#menu-toggle-2").click(function(e) {
         e.preventDefault();
+        $("#sm_stories").toggleClass("container")
+        $("#main_story").toggleClass("container_side")
         $("#wrapper").toggleClass("toggled-2");
         $('#menu ul').hide();
     });
