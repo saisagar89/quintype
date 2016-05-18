@@ -6,7 +6,7 @@
       <div class="col-lg-12 col-xs-12 pd-0"> 
         <!-- FIRST STORY -->
         <%unless @stories['stories'].blank?%>
-          <div class="col-lg-6 col-sm-6 pd-0 first_story">
+          <div class="col-lg-6 col-sm-12 pd-0 first_story">
             <div class="col-lg-8 col-md-12 col-sm-12">
               <img class="img-responsive" src="<%= "http://quintype-01.imgix.net/#{@stories['stories'].first['hero-image-s3-key'] rescue ''}"%>" />
             </div>

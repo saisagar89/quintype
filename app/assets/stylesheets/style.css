@@ -206,6 +206,7 @@ header {
 .logo {
     padding: 0px !important;
 }
+.side-list-grid { display: none; }
 }
 @media all and (min-width:650px) and (max-width:767px) {
 label {
